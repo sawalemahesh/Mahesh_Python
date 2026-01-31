@@ -1,0 +1,13 @@
+
+    {
+        "question": "What is the capital of France?",
+        "options": ["A. London", "B. Paris", "C. Berlin", "D. Madrid"],
+        "answer": "B"
+    },
+    {
+        "question": "Which language is used for web apps?",
+        "options": ["A. Python", "B. HTML", "C. C++", "D. Java"],
+        "answer": "B"
+    }
+]
+
