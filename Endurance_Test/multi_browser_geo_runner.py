@@ -11,6 +11,15 @@ URLS = [
     "https://maheshsawale.blogspot.com/",
     "https://maheshsawale.blogspot.com/2025/04/how-ai-and-big-data-are-changing-stock.html",
     "https://maheshsawale.blogspot.com/2022/09/how-to-trade-in-stock-market.html"
+    "https://maheshsawale.blogspot.com/2024/04/a-comprehensive-guide-to-invest-in.html"
+    "https://maheshsawale.blogspot.com/2022/08/5-ways-to-reduce-your-power-bill-by.html"
+    "https://maheshsawale.blogspot.com/2024/04/what-is-machine-learning-and-artificial.html"
+    "https://maheshsawale.blogspot.com/"
+    "https://maheshsawale.blogspot.com/2022/08/what-is-web-hosting-in-marathi.html"
+    "https://maheshsawale.blogspot.com/2022/08/seo.html"
+    "https://maheshsawale.blogspot.com/2022/08/what-is-web-hosting-in-marathi.html"
+    "https://maheshsawale.blogspot.com/2022/08/blog-post.html"
+    "https://maheshsawale.blogspot.com/2022/08/how-to-start-blogging.html"
 ]
 
 SELECTED_GEO = "IN"
