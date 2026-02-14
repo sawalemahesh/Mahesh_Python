@@ -4,47 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Mahesh_Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/pytest.ini.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/tests/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POM/utils/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Bank Transaction Management System.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Employee Salary Calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Exam Result Processing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Excel01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Excel02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Excel03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/File Handling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Hospital Appointment Management System.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Online Food Delivery Management System.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/PR01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Palindrome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Personal Finance &amp; Expense Tracker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Project001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Sorting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Vehicle Rental System.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Word Counter Tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/factorial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/results.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Pytest_SL_03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - .html" afterDir="false" />
+    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Final">
+      <change afterPath="$PROJECT_DIR$/Endurance_Test/multi_browser_geo_runner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/pages/cart_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/pages/checkout_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/pages/products_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/testdata/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/testdata/test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/tests/test_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/tests/test_checkout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/tests/test_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/utilities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/utilities/common_methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/utilities/config_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/POM/utilities/driver_setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/ATM Simulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/Bank Management System.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/Email Sender Automation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/Excel_P.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/File Organizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/Number_Guessing_Game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/PR01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/Password Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/MCQ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/Roll_Dics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/Website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/pytest.ini.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/POM/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM/utils/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/POM/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/PR01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/Pytest_SL06.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/Pytest_SL06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results - .html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/195428aa-cb9b-432e-8d2e-c997afba87e2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/35a34d78-7895-419f-8bd5-28391ba41684-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/47197989-2d68-448f-8e6a-f54e5a4414e0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/780456aa-2f5e-46da-a1fe-1254fcc799d8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b9bee2dd-dd74-4bfe-8796-a847b975c36b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d4671cae-efd1-4b2c-ba4f-9879ea167207-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/da7e1f38-be17-4379-b331-8657c23d5e88-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e08d508d-807b-41a2-bf40-a76c48e15492-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fcbe5503-294b-496b-9449-f8f1b559c16d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/04b7649c-9739-4907-bf63-f40c7822a823-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/38470146-689c-4c16-a85d-98aae6fc4df5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/583b449b-4a28-406e-a6ad-28996a91a850-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/5e9b3a48-67e6-46ee-8c90-7e0411ebd0a3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/63b6ccee-69be-4260-9b5f-edb441634821-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/697c744d-6dd7-4ecd-ad1e-4b51b5062377-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/6ca551a8-44a0-487a-943f-3d906b3c5b3c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/755e6230-d1c2-4485-8f9a-149c68cceb29-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/80c065e5-23dc-41ec-abb2-a767f74a2ade-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/973a1757-b73f-4077-b04a-b52a5787410d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/9a55af32-fed4-491f-8eb7-5f9223938d84-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/a0960ece-cfd2-46b9-99ec-4c035764a6be-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/a19ed814-0221-48b9-addf-0db8cf8482c3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/a41a9355-a9cf-4727-9bb4-fa12471968eb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/b7243d63-5f14-463b-bbcd-8d3a7e3da155-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/c47ee712-f3e2-4f2b-bf4f-dd576cb332de-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/ccb01c31-f787-4990-8546-e7bfac8180ee-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/d3ad24b8-8339-4ac2-bc0e-2e846c85ee53-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/e81f931a-1150-4fb0-8613-f08237d02d28-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/ea517899-0271-4c66-ace1-cb368dd250a5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/fa9ed7a4-a706-4f0f-a473-2b0375c0e343-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_result/fae5747f-17e4-4454-8ebc-8004bea9707b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_results/1c54aa74-5495-4bc9-b471-4447e215a05e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_results/b599e81d-55d3-45f2-89ff-33d66f5cd04f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure_results/efbf3883-0b68-4127-a21c-2d49dbc18e7c-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +93,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Python Stub" />
         <option value="Python Script" />
       </list>
     </option>
@@ -87,87 +122,124 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="37FwDe1Kz0KRMYwmvfT38I0Qn8D" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for POM.tests.test_login.test_valid_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_addition.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_compare.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_driver.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_login_negitive_module.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_mahesh_selenium.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_selen_module.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL04.test_Xpath.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL05.test_OrangeHRM.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in PR01.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Bank Transaction Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Contact_Mangemnet.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Employee Salary Calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Exam Result Processing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.File Handling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Hospital Appointment Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Online Food Delivery Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PR01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Palindrome.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Personal Finance &amp; Expense Tracker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Project001.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Sorting.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Vehicle Rental System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Word Counter Tool (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Word Counter Tool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Python.game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.painter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.recorder.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow.executor": "Run",
+    "Python tests.Python tests for POM.tests.test_login.test_invalid_login.executor": "Run",
+    "Python tests.Python tests for POM.tests.test_login.test_valid_login.executor": "Run",
+    "Python tests.Python tests for PR01.test_addition.executor": "Run",
+    "Python tests.Python tests for PR01.test_compare.executor": "Run",
+    "Python tests.Python tests for PR01.test_driver.executor": "Run",
+    "Python tests.Python tests for PR01.test_login_negitive_module.executor": "Run",
+    "Python tests.Python tests for PR01.test_mahesh_selenium.executor": "Run",
+    "Python tests.Python tests for PR01.test_selen_module.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL04.test_Xpath.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL05.test_OrangeHRM.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_SignUP_Page.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_SignUp.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_automation.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor": "Run",
+    "Python tests.Python tests in PR01.py.executor": "Run",
+    "Python.ATM Simulation.executor": "Run",
+    "Python.Bank Management System.executor": "Run",
+    "Python.Bank Transaction Management System.executor": "Run",
+    "Python.Contact_Mangemnet.executor": "Run",
+    "Python.Email Sender Automation.executor": "Run",
+    "Python.Employee Salary Calculator.executor": "Run",
+    "Python.Exam Result Processing.executor": "Run",
+    "Python.Excel01.executor": "Run",
+    "Python.Excel02.executor": "Run",
+    "Python.Excel03.executor": "Run",
+    "Python.Excel_P.executor": "Run",
+    "Python.File Handling.executor": "Run",
+    "Python.File Organizer.executor": "Run",
+    "Python.Game.executor": "Run",
+    "Python.Hospital Appointment Management System.executor": "Run",
+    "Python.MCQ.executor": "Run",
+    "Python.Number_Guessing_Game (1).executor": "Run",
+    "Python.Number_Guessing_Game.executor": "Run",
+    "Python.Online Food Delivery Management System.executor": "Run",
+    "Python.PR01.executor": "Run",
+    "Python.Palindrome.executor": "Run",
+    "Python.Password Generator.executor": "Run",
+    "Python.Personal Finance & Expense Tracker.executor": "Run",
+    "Python.Project001.executor": "Run",
+    "Python.Sorting.executor": "Run",
+    "Python.Test_Data_Generator.executor": "Run",
+    "Python.Vehicle Rental System.executor": "Run",
+    "Python.Word Counter Tool (1).executor": "Run",
+    "Python.Word Counter Tool.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.driver_setup.executor": "Run",
+    "Python.factorial.executor": "Run",
+    "Python.game.executor": "Run",
+    "Python.home_page.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "Python.multi_browser_geo_runner.executor": "Run",
+    "Python.painter.executor": "Run",
+    "Python.recorder.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Mahesh_Python/Page_Object_Model/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Mahesh_Python\Page_Object_Model\config" />
+      <recent name="C:\Mahesh_Python\Page_Object_Model\utilities" />
+      <recent name="C:\Mahesh_Python\Page_Object_Model\Tests" />
+      <recent name="C:\Mahesh_Python\Page_Object_Model\testdata" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Mahesh_Python\POM" />
       <recent name="C:\Mahesh_Python\Python_Projects" />
       <recent name="C:\Mahesh_Python\Selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PR01">
-    <configuration name="Excel01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install -r requirements.txt" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.multi_browser_geo_runner">
+    <configuration name="Email Sender Automation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,12 +248,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/Excel01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/Email Sender Automation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Excel_P" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mahesh_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/Excel_P.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,13 +294,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/PR01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/PR01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,7 +308,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Palindrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="multi_browser_geo_runner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,12 +317,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/Palindrome.py" />
+      <option name="SCRIPT_NAME" value="C:\Mahesh_Python\Endurance_Test\multi_browser_geo_runner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,59 +331,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Personal Finance &amp; Expense Tracker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for POM.tests.test_checkout.test_complete_checkout_flow" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/Personal Finance &amp; Expense Tracker.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Vehicle Rental System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mahesh_Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/Vehicle Rental System.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;POM.tests.test_checkout.test_complete_checkout_flow&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multi_browser_geo_runner" />
         <item itemvalue="Python.PR01" />
-        <item itemvalue="Python.Palindrome" />
-        <item itemvalue="Python.Vehicle Rental System" />
-        <item itemvalue="Python.Personal Finance &amp; Expense Tracker" />
-        <item itemvalue="Python.Excel01" />
+        <item itemvalue="Python.Email Sender Automation" />
+        <item itemvalue="Python.Excel_P" />
+        <item itemvalue="Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow" />
       </list>
     </recent_temporary>
   </component>
@@ -324,10 +388,31 @@
       <workItem from="1768674363929" duration="34268000" />
       <workItem from="1769083796596" duration="330000" />
     </task>
+    <task id="LOCAL-00001" summary="Final">
+      <option name="closed" value="true" />
+      <created>1769890915407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890915407</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Final">
+      <option name="closed" value="true" />
+      <created>1769890945064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769890945064</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />

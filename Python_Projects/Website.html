@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Automation Testing Practice Hub</title>
+
+<!-- SEO -->
+<meta name="description" content="Practice Selenium, Playwright, Cypress automation with real UI elements, admin panel and blogs.">
+<meta name="keywords" content="Automation Testing Practice, Selenium UI Testing, Playwright Demo">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- BLOG SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Automation Testing Practice Hub"
+}
+</script>
+
+<!-- GOOGLE ADSENSE PLACEHOLDER -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"
+crossorigin="anonymous"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+header, footer {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+}
+nav button {
+  margin: 5px;
+  padding: 8px 14px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section {
+  display: none;
+  padding: 20px;
+}
+section.active {
+  display: block;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+button.action {
+  background: #22c55e;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #334155;
+  padding: 8px;
+  text-align: center;
+}
+.ads {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px dashed #475569;
+  color: #9ca3af;
+}
+.success { color: #4ade80; }
+.error { color: #f87171; }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Automation Testing Practice Hub</h1>
+<p>Learn • Practice • Automate</p>
+
+<div class="ads">AdSense Header Ad</div>
+
+<nav>
+<button onclick="show('home')">Home</button>
+<button onclick="show('dashboard')">Dashboard</button>
+<button onclick="show('practice')">UI Practice</button>
+<button onclick="show('admin')">Admin Panel</button>
+</nav>
+</header>
+
+<!-- HOME / LOGIN -->
+<section id="home" class="active">
+<div class="container">
+<div class="card">
+<h2>Login</h2>
+<p><b>Demo Credentials</b><br>
+Username: <code>testuser</code><br>
+Password: <code>Test@123</code></p>
+
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+<button class="action" onclick="login()">Login</button>
+<p id="loginMsg"></p>
+
+<div class="ads">AdSense Main Content Ad</div>
+</div>
+</div>
+</section>
+
+<!-- DASHBOARD / BLOG -->
+<section id="dashboard">
+<div class="container">
+<div class="card">
+<h2>Automation Blogs</h2>
+
+<div class="card">
+<h3>How Selenium Works Internally</h3>
+<p>WebDriver architecture, browser drivers and execution flow.</p>
+</div>
+
+<div class="card">
+<h3>Playwright vs Cypress</h3>
+<p>Speed, reliability and modern automation comparison.</p>
+</div>
+
+<div class="card">
+<h3>UI Testing Practice Blog</h3>
+<p>Hands-on UI elements for automation testing.</p>
+<button onclick="show('practice')">Open Practice</button>
+</div>
+
+<div class="ads">Inline Blog Ad</div>
+</div>
+</div>
+</section>
+
+<!-- UI PRACTICE -->
+<section id="practice">
+<div class="container">
+<div class="card">
+<h2>UI Automation Practice</h2>
+
+<input id="textInput" placeholder="Text Input">
+<input type="password" id="passInput" placeholder="Password">
+
+<select id="dropdown">
+<option>Option 1</option>
+<option>Option 2</option>
+</select>
+
+<br>
+<input type="checkbox" id="checkbox"> Checkbox
+<br>
+<input type="radio" name="radio"> Radio Button
+<br><br>
+
+<button onclick="alert('Test Alert')">Show Alert</button>
+</div>
+</div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin">
+<div class="container">
+
+<div class="card">
+<h2>Add / Edit User</h2>
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<select id="role">
+<option>Admin</option>
+<option>User</option>
+<option>Tester</option>
+</select>
+<button class="action" onclick="saveUser()">Save User</button>
+</div>
+
+<div class="card">
+<h2>User List</h2>
+<table id="userTable">
+<tr>
+<th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Action</th>
+</tr>
+</table>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="ads">AdSense Footer Ad</div>
+<p>© Automation Practice Site – For Testing Only</p>
+</footer>
+
+<script>
+let loggedIn = false;
+let editRow = null;
+let userId = 1;
+
+function show(id) {
+  if (!loggedIn && id !== 'home') {
+    alert("Please login first");
+    return;
+  }
+  document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+
+function login() {
+  if (username.value === "testuser" && password.value === "Test@123") {
+    loggedIn = true;
+    loginMsg.textContent = "Login successful";
+    loginMsg.className = "success";
+    show('dashboard');
+  } else {
+    loginMsg.textContent = "Invalid credentials";
+    loginMsg.className = "error";
+  }
+}
+
+function saveUser() {
+  const table = document.getElementById("userTable");
+  if (editRow) {
+    editRow.cells[1].innerText = name.value;
+    editRow.cells[2].innerText = email.value;
+    editRow.cells[3].innerText = role.value;
+    editRow = null;
+  } else {
+    let row = table.insertRow();
+    row.innerHTML = `
+      <td>${userId++}</td>
+      <td>${name.value}</td>
+      <td>${email.value}</td>
+      <td>${role.value}</td>
+      <td>
+        <button onclick="editUser(this)">Edit</button>
+        <button onclick="deleteUser(this)">Delete</button>
+      </td>`;
+  }
+  name.value = email.value = "";
+}
+
+function deleteUser(btn) {
+  btn.parentElement.parentElement.remove();
+}
+
+function editUser(btn) {
+  editRow = btn.parentElement.parentElement;
+  name.value = editRow.cells[1].innerText;
+  email.value = editRow.cells[2].innerText;
+  role.value = editRow.cells[3].innerText;
+}
+</script>
+
+</body>
+</html>

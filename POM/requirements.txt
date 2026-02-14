@@ -1,3 +1,5 @@
-selenium
-pytest
-pytest-html
+selenium==4.17.2
+pytest==7.4.4
+pytest-html==4.1.1
+webdriver-manager==4.0.1
+configparser==6.0.0

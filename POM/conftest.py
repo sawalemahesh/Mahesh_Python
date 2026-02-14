@@ -1,10 +1,11 @@
 import pytest
-from selenium import webdriver
+from POM.utilities.driver_setup import DriverSetup
+from POM.utilities.config_reader import read_config
 
-@pytest.fixture
-def driver():
-    driver = webdriver.Chrome()
-    driver.get("https://the-internet.herokuapp.com/login")
-    driver.maximize_window()
+
+@pytest.fixture(scope="function")
+def setup():
+    driver = DriverSetup.get_driver()
+    driver.get(read_config("APP", "base_url"))
     yield driver
-    driver.quit()
+    DriverSetup.quit_driver()
