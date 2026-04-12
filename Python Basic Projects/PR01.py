@@ -1,195 +1,157 @@
 import asyncio
 import random
-import argparse
-import time
+import logging
+import os
+from pathlib import Path
 from playwright.async_api import async_playwright
 
-# =====================================================
-# 🔹 HARDCODED URL LIST
-# =====================================================
+# ==============================
+# AUTO-DETECT JENKINS
+# ==============================
 
-URL_LIST = [
+RUNNING_IN_JENKINS = os.getenv("JENKINS_HOME") is not None
+
+# show browser locally, headless in Jenkins
+HEADLESS = True if RUNNING_IN_JENKINS else False
+
+# ==============================
+# SETTINGS
+# ==============================
+
+URLS = [
     "https://maheshsawale.blogspot.com/",
-    # "https://maheshsawale.blogspot.com/p/about-me.html",
-    # "https://maheshsawale.blogspot.com/search/label/Automation",
+    "https://maheshsawale.blogspot.com/2025/04/how-ai-and-big-data-are-changing-stock.html",
+    "https://maheshsawale.blogspot.com/2022/09/how-to-trade-in-stock-market.html",
+    "https://maheshsawale.blogspot.com/2024/04/a-comprehensive-guide-to-invest-in.html",
+    "https://maheshsawale.blogspot.com/2022/08/5-ways-to-reduce-your-power-bill-by.html",
+    "https://maheshsawale.blogspot.com/2024/04/what-is-machine-learning-and-artificial.html",
+    "https://maheshsawale.blogspot.com/2022/08/what-is-web-hosting-in-marathi.html",
+    "https://maheshsawale.blogspot.com/2022/08/seo.html",
+    "https://maheshsawale.blogspot.com/2022/08/blog-post.html",
+    "https://maheshsawale.blogspot.com/2022/08/how-to-start-blogging.html",
 ]
 
-# =====================================================
-# 🔹 GEO LOCATIONS
-# =====================================================
+CONCURRENT_BROWSERS = 2
+PAGES_PER_BROWSER = 2
+VISIT_DELAY = (5, 12)
+PAGE_TIMEOUT = 30000
 
-GEO_LOCATIONS = {
-    "IN": {"latitude": 20.5937, "longitude": 78.9629},
-    "US": {"latitude": 37.0902, "longitude": -95.7129},
-    "UK": {"latitude": 55.3781, "longitude": -3.4360},
-    "DE": {"latitude": 51.1657, "longitude": 10.4515},
-    "SG": {"latitude": 1.3521, "longitude": 103.8198},
-}
+SCREENSHOT_DIR = Path("screenshots")
+SCREENSHOT_DIR.mkdir(exist_ok=True)
 
-# =====================================================
-# 🔹 DEVICE LIST
-# =====================================================
+# ==============================
+# LOGGING
+# ==============================
 
-MOBILE_DEVICES = [
-    "iPhone 14",
-    "Pixel 7",
-    "iPad Pro 11"
-]
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
 
-DESKTOP_VIEWPORT = {"width": 1280, "height": 800}
+logging.info(f"Running in Jenkins: {RUNNING_IN_JENKINS}")
+logging.info(f"Headless mode: {HEADLESS}")
 
-# =====================================================
-# 🔹 LOAD PROXIES
-# =====================================================
+# ==============================
+# BLOCK HEAVY RESOURCES (FASTER)
+# ==============================
 
-def load_proxies(proxy_file):
+async def block_resources(route):
+    if route.request.resource_type in ["image", "media", "font"]:
+        await route.abort()
+    else:
+        await route.continue_()
+
+# ==============================
+# HUMAN-LIKE SCROLL
+# ==============================
+
+async def smooth_scroll(page):
     try:
-        with open(proxy_file, "r") as f:
-            return [line.strip() for line in f.readlines() if line.strip()]
+        await page.evaluate("""
+            async () => {
+                const height = document.body.scrollHeight;
+                const step = height / 25;
+                for (let i = 0; i < 25; i++) {
+                    window.scrollBy(0, step);
+                    await new Promise(r => setTimeout(r, 120));
+                }
+            }
+        """)
+        await asyncio.sleep(random.uniform(1,2))
+        await page.evaluate("window.scrollTo(0,0)")
     except:
-        return []
+        pass
 
-# =====================================================
-# 🔹 AUTO SCROLL
-# =====================================================
+# ==============================
+# VISIT PAGE
+# ==============================
 
-async def auto_scroll(page, duration=15):
-    end_time = time.time() + duration
-    while time.time() < end_time:
-        await page.evaluate("window.scrollBy(0, window.innerHeight)")
-        await asyncio.sleep(1)
-
-# =====================================================
-# 🔹 SESSION FUNCTION
-# =====================================================
-
-async def run_session(playwright, config, session_id):
-
-    proxy = random.choice(config["proxies"]) if config["proxies"] else None
-    geo = GEO_LOCATIONS.get(config["geo"], GEO_LOCATIONS["US"])
-
-    browser_type = random.choice(
-        [playwright.chromium, playwright.firefox, playwright.webkit]
-    )
-
-    # Firefox does NOT support mobile emulation
-    if browser_type == playwright.firefox:
-        device_name = "Desktop"
-        use_mobile = False
-    else:
-        device_name = random.choice(["Desktop"] + MOBILE_DEVICES)
-        use_mobile = device_name != "Desktop"
-
-    print(f"🚀 Session {session_id} | Browser: {browser_type.name} | Device: {device_name}")
-
-    browser = await browser_type.launch(headless=config["headless"])
-
-    context_args = {
-        "geolocation": geo,
-        "permissions": ["geolocation"],
-        "locale": "en-US",
-    }
-
-    if proxy:
-        context_args["proxy"] = {"server": proxy}
-
-    # Apply device safely
-    if use_mobile:
-        device = playwright.devices.get(device_name)
-        context_args.update(device)
-    else:
-        context_args["viewport"] = DESKTOP_VIEWPORT
-
-    context = await browser.new_context(**context_args)
-    page = await context.new_page()
-
-    start_time = time.time()
-
+async def visit(page, url, sid):
     try:
-        while True:
+        logging.info(f"[{sid}] Visiting {url}")
 
-            # Max runtime stop
-            if config["max_runtime"] and (time.time() - start_time) > config["max_runtime"]:
-                print(f"⏹ Session {session_id} reached max runtime")
-                break
+        await page.goto(
+            url,
+            timeout=PAGE_TIMEOUT,
+            wait_until="domcontentloaded"
+        )
 
-            if config["random_url"]:
-                url = random.choice(URL_LIST)
-                print(f"🌍 Session {session_id} loading: {url}")
+        await smooth_scroll(page)
 
-                await page.goto(url, timeout=60000)
-                await auto_scroll(page, config["scroll_duration"])
-                await asyncio.sleep(config["refresh_interval"])
+        # screenshot helps confirm execution in Jenkins
+        await page.screenshot(path=SCREENSHOT_DIR / f"{sid}.png")
 
-            else:
-                for url in URL_LIST:
-
-                    if config["max_runtime"] and (time.time() - start_time) > config["max_runtime"]:
-                        break
-
-                    print(f"🌍 Session {session_id} loading: {url}")
-                    await page.goto(url, timeout=60000)
-                    await auto_scroll(page, config["scroll_duration"])
-                    await asyncio.sleep(config["refresh_interval"])
+        await asyncio.sleep(random.uniform(2,5))
 
     except Exception as e:
-        print(f"❌ Session {session_id} Error: {e}")
+        logging.warning(f"[{sid}] Error: {e}")
 
-    finally:
+# ==============================
+# WORKER
+# ==============================
+
+async def worker(worker_id):
+    while True:
         try:
-            await context.close()
-        except:
-            pass
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(
+                    headless=HEADLESS,
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                        "--no-sandbox",
+                        "--disable-dev-shm-usage",
+                        "--disable-gpu"
+                    ]
+                )
 
-        try:
-            await browser.close()
-        except:
-            pass
+                context = await browser.new_context()
+                await context.route("**/*", block_resources)
 
-        print(f"✅ Session {session_id} Closed")
+                pages = [await context.new_page() for _ in range(PAGES_PER_BROWSER)]
 
-# =====================================================
-# 🔹 MAIN FUNCTION
-# =====================================================
+                logging.info(f"Worker {worker_id} started")
+
+                while True:
+                    tasks = []
+                    for i, page in enumerate(pages):
+                        url = random.choice(URLS)
+                        sid = f"W{worker_id}-P{i}"
+                        tasks.append(visit(page, url, sid))
+
+                    await asyncio.gather(*tasks)
+                    await asyncio.sleep(random.uniform(*VISIT_DELAY))
+
+        except Exception as e:
+            logging.error(f"Worker {worker_id} crashed: {e}")
+            await asyncio.sleep(5)
+
+# ==============================
+# MAIN
+# ==============================
 
 async def main():
-
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("--geo", default="US")
-    parser.add_argument("--sessions", type=int, default=3)
-    parser.add_argument("--refresh_interval", type=int, default=30)
-    parser.add_argument("--scroll_duration", type=int, default=15)
-    parser.add_argument("--proxy_file", default="proxies.txt")
-    parser.add_argument("--headless", action="store_true")
-    parser.add_argument("--random_url", action="store_true")
-    parser.add_argument("--max_runtime", type=int, default=0,
-                        help="Max runtime per session in seconds (0 = infinite)")
-
-    args = parser.parse_args()
-
-    config = {
-        "geo": args.geo,
-        "refresh_interval": args.refresh_interval,
-        "scroll_duration": args.scroll_duration,
-        "proxies": load_proxies(args.proxy_file),
-        "headless": args.headless,
-        "random_url": args.random_url,
-        "max_runtime": args.max_runtime
-    }
-
-    async with async_playwright() as playwright:
-
-        tasks = [
-            run_session(playwright, config, i + 1)
-            for i in range(args.sessions)
-        ]
-
-        await asyncio.gather(*tasks, return_exceptions=True)
-
-# =====================================================
-# 🔹 RUN
-# =====================================================
+    workers = [worker(i) for i in range(CONCURRENT_BROWSERS)]
+    await asyncio.gather(*workers)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="">
+    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="F12">
+      <change afterPath="$PROJECT_DIR$/Pytest/Pytest01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pytest/Pytest02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/ABC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/PR02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Basic Projects/UI_Automater.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/Project001/Finance_Guide.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/AL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/Rev_WCO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/counting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Projects/vowel_count.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/OrangeHRM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/Sample_IN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mahesh_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mahesh_Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Basic Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Basic Projects/PR01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Projects/Palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/Palindrome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +62,9 @@
     <commands />
     <urls />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -71,6 +90,17 @@
     &quot;Python tests.Python tests for PR01.test_login_negitive_module.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for PR01.test_mahesh_selenium.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for PR01.test_selen_module.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_OrangeHRM.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_Web.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_add.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_get_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_google_title.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for PR02.test_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Pytest.Pytest01.test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Pytest.Pytest02.test_required_keys.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Pytest.Pytest02.test_status_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Selenium.OrangeHRM.test_login.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor&quot;: &quot;Run&quot;,
@@ -82,7 +112,10 @@
     &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN2.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in PR01.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ABC.executor&quot;: &quot;Run&quot;,
     &quot;Python.ATM Simulation.executor&quot;: &quot;Run&quot;,
     &quot;Python.Bank Management System.executor&quot;: &quot;Run&quot;,
     &quot;Python.Bank Transaction Management System.executor&quot;: &quot;Run&quot;,
@@ -103,24 +136,29 @@
     &quot;Python.Number_Guessing_Game.executor&quot;: &quot;Run&quot;,
     &quot;Python.Online Food Delivery Management System.executor&quot;: &quot;Run&quot;,
     &quot;Python.PR01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PR02.executor&quot;: &quot;Run&quot;,
     &quot;Python.Palindrome.executor&quot;: &quot;Run&quot;,
     &quot;Python.Password Generator.executor&quot;: &quot;Run&quot;,
     &quot;Python.Personal Finance &amp; Expense Tracker.executor&quot;: &quot;Run&quot;,
     &quot;Python.Project001.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Rev_WCO.executor&quot;: &quot;Run&quot;,
     &quot;Python.Sorting.executor&quot;: &quot;Run&quot;,
     &quot;Python.Test_Data_Generator.executor&quot;: &quot;Run&quot;,
     &quot;Python.Vehicle Rental System.executor&quot;: &quot;Run&quot;,
     &quot;Python.Word Counter Tool (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.Word Counter Tool.executor&quot;: &quot;Run&quot;,
     &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.counting.executor&quot;: &quot;Run&quot;,
     &quot;Python.driver_setup.executor&quot;: &quot;Run&quot;,
     &quot;Python.factorial.executor&quot;: &quot;Run&quot;,
     &quot;Python.game.executor&quot;: &quot;Run&quot;,
     &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
     &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.multi_browser_geo_runner (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.multi_browser_geo_runner.executor&quot;: &quot;Run&quot;,
     &quot;Python.painter.executor&quot;: &quot;Run&quot;,
     &quot;Python.recorder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vowel_count.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -138,7 +176,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -167,8 +205,8 @@
       <command value="pip install -r requirements.txt" />
     </option>
   </component>
-  <component name="RunManager" selected="Python.multi_browser_geo_runner">
-    <configuration name="Email Sender Automation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for Selenium.OrangeHRM.test_login">
+    <configuration name="PR02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,53 +220,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/Email Sender Automation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Excel_P" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mahesh_Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/Excel_P.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PR01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mahesh_Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/PR01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/PR02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,12 +238,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endurance_Test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="C:\Mahesh_Python\Endurance_Test\multi_browser_geo_runner.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Endurance_Test/multi_browser_geo_runner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +252,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for POM.tests.test_checkout.test_complete_checkout_flow" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for PR02.test_get_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,24 +264,56 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;POM.tests.test_checkout.test_complete_checkout_flow&quot;" />
+      <option name="_new_target" value="&quot;PR02.test_get_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Pytest.Pytest02.test_required_keys" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Mahesh_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Pytest.Pytest02.test_required_keys&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Selenium.OrangeHRM.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Mahesh_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Selenium.OrangeHRM.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for Selenium.OrangeHRM.test_login" />
+        <item itemvalue="Python.PR02" />
         <item itemvalue="Python.multi_browser_geo_runner" />
-        <item itemvalue="Python.PR01" />
-        <item itemvalue="Python.Email Sender Automation" />
-        <item itemvalue="Python.Excel_P" />
-        <item itemvalue="Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow" />
+        <item itemvalue="Python tests.Python tests for PR02.test_get_user" />
+        <item itemvalue="Python tests.Python tests for Pytest.Pytest02.test_required_keys" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+        <option value="bundled-python-sdk-1cd77e80b48f-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.32098.74" />
       </set>
     </attachedChunks>
   </component>
@@ -341,7 +365,31 @@
       <option name="project" value="LOCAL" />
       <updated>1771065299309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="F">
+      <option name="closed" value="true" />
+      <created>1771071161374</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771071161374</updated>
+    </task>
+    <task id="LOCAL-00005" summary="F1">
+      <option name="closed" value="true" />
+      <created>1771092378448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1771092378448</updated>
+    </task>
+    <task id="LOCAL-00006" summary="F12">
+      <option name="closed" value="true" />
+      <created>1771132824927</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771132824927</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +397,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="F" />
+    <MESSAGE value="F1" />
+    <MESSAGE value="F12" />
+    <option name="LAST_COMMIT_MESSAGE" value="F12" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />
