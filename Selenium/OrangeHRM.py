@@ -12,7 +12,6 @@ def test_login():
 
     driver = webdriver.Chrome(chrome_options)
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-    time.sleep(3)
     username = driver.find_element(By.NAME, 'username').send_keys('Admin')
     password = driver.find_element(By.NAME, 'password').send_keys('admin123')
     submit= driver.find_element(By.XPATH, "//button[@type ='submit']").click()
