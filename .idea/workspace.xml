@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="F12">
-      <change afterPath="$PROJECT_DIR$/Pytest/Pytest01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pytest/Pytest02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Basic Projects/ABC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Basic Projects/PR02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Basic Projects/UI_Automater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/Project001/Finance_Guide.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/AL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/Rev_WCO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/counting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Projects/vowel_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/OrangeHRM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/Sample_IN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mahesh_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mahesh_Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Day13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python Basic Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Basic Projects/PR01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Projects/Palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/Palindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/OrangeHRM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/OrangeHRM.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +191,7 @@
       <command value="pip install -r requirements.txt" />
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Selenium.OrangeHRM.test_login">
+  <component name="RunManager" selected="Python tests.Python tests for Pytest.Pytest01.test_login">
     <configuration name="PR02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
@@ -268,7 +254,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Pytest.Pytest02.test_required_keys" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Pytest.Pytest01.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,7 +266,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pytest.Pytest02.test_required_keys&quot;" />
+      <option name="_new_target" value="&quot;Pytest.Pytest01.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -302,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for Pytest.Pytest01.test_login" />
         <item itemvalue="Python tests.Python tests for Selenium.OrangeHRM.test_login" />
         <item itemvalue="Python.PR02" />
         <item itemvalue="Python.multi_browser_geo_runner" />
         <item itemvalue="Python tests.Python tests for PR02.test_get_user" />
-        <item itemvalue="Python tests.Python tests for Pytest.Pytest02.test_required_keys" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771132824927</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Day13">
+      <option name="closed" value="true" />
+      <created>1776021012527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776021012527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +394,8 @@
     <MESSAGE value="F" />
     <MESSAGE value="F1" />
     <MESSAGE value="F12" />
-    <option name="LAST_COMMIT_MESSAGE" value="F12" />
+    <MESSAGE value="Day13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day13" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />
