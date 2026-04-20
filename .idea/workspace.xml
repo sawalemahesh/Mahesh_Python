@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Day13">
+    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/Capgemini/Abstraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/List_Problems.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/Patterns.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/Reverse_String_&amp;_Count_Frequnecy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/smallest and biggest words in string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/string_number_count.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playwright/PR01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/YT_Download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/YT_Videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Shorts/Count Frequency of Words.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Shorts/First Non-Repeating Character.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Shorts/Merge Two Sorted Lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/SL07.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Basic Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Basic Projects/PR01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium/OrangeHRM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/OrangeHRM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/PR01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium/Sample_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/Sample_IN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,116 +76,141 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for POM.tests.test_login.test_invalid_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for POM.tests.test_login.test_valid_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_addition.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_compare.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_driver.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_login_negitive_module.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_mahesh_selenium.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR01.test_selen_module.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_OrangeHRM.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_Web.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_add.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_get_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_google_title.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for PR02.test_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Pytest.Pytest01.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Pytest.Pytest02.test_required_keys.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Pytest.Pytest02.test_status_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.OrangeHRM.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL04.test_Xpath.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL05.test_OrangeHRM.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_SignUP_Page.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_SignUp.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_automation.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN2.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in PR01.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ABC.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ATM Simulation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Bank Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Bank Transaction Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Contact_Mangemnet.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Email Sender Automation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Employee Salary Calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Exam Result Processing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Excel_P.executor&quot;: &quot;Run&quot;,
-    &quot;Python.File Handling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.File Organizer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Hospital Appointment Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MCQ.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Number_Guessing_Game (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Number_Guessing_Game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Online Food Delivery Management System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PR01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PR02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Palindrome.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Password Generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Personal Finance &amp; Expense Tracker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Project001.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Rev_WCO.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Sorting.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test_Data_Generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Vehicle Rental System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Word Counter Tool (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Word Counter Tool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.counting.executor&quot;: &quot;Run&quot;,
-    &quot;Python.driver_setup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Python.game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.home_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.multi_browser_geo_runner (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.multi_browser_geo_runner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.painter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.recorder.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vowel_count.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Mahesh_Python/Page_Object_Model/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow.executor": "Run",
+    "Python tests.Python tests for POM.tests.test_login.test_invalid_login.executor": "Run",
+    "Python tests.Python tests for POM.tests.test_login.test_valid_login.executor": "Run",
+    "Python tests.Python tests for PR01.test_addition.executor": "Run",
+    "Python tests.Python tests for PR01.test_compare.executor": "Run",
+    "Python tests.Python tests for PR01.test_driver.executor": "Run",
+    "Python tests.Python tests for PR01.test_login_negitive_module.executor": "Run",
+    "Python tests.Python tests for PR01.test_mahesh_selenium.executor": "Run",
+    "Python tests.Python tests for PR01.test_selen_module.executor": "Run",
+    "Python tests.Python tests for PR02.test_OrangeHRM.executor": "Run",
+    "Python tests.Python tests for PR02.test_Web.executor": "Run",
+    "Python tests.Python tests for PR02.test_add.executor": "Run",
+    "Python tests.Python tests for PR02.test_get_user.executor": "Run",
+    "Python tests.Python tests for PR02.test_google_title.executor": "Run",
+    "Python tests.Python tests for PR02.test_login.executor": "Run",
+    "Python tests.Python tests for PR02.test_user.executor": "Run",
+    "Python tests.Python tests for Playwright.PR01.test_login.executor": "Run",
+    "Python tests.Python tests for Pytest.Pytest01.test_login.executor": "Run",
+    "Python tests.Python tests for Pytest.Pytest02.test_required_keys.executor": "Run",
+    "Python tests.Python tests for Pytest.Pytest02.test_status_code.executor": "Run",
+    "Python tests.Python tests for Python_Projects.PR01.test_api.executor": "Run",
+    "Python tests.Python tests for Python_Projects.PR01.test_get_users.executor": "Run",
+    "Python tests.Python tests for Python_Projects.PR01.test_sl.executor": "Run",
+    "Python tests.Python tests for Selenium.OrangeHRM.test_login.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL04.test_Xpath.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL05.test_OrangeHRM.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_SignUP_Page.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_SignUp.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_automation.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor": "Run",
+    "Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor": "Run",
+    "Python tests.Python tests for Selenium.SL07.test_google_search.executor": "Run",
+    "Python tests.Python tests for Selenium.Sample_IN.test_IN.executor": "Run",
+    "Python tests.Python tests for Selenium.Sample_IN.test_IN2.executor": "Run",
+    "Python tests.Python tests in PR01.py.executor": "Run",
+    "Python.ABC.executor": "Run",
+    "Python.ATM Simulation.executor": "Run",
+    "Python.Abstraction.executor": "Run",
+    "Python.Bank Management System.executor": "Run",
+    "Python.Bank Transaction Management System.executor": "Run",
+    "Python.Contact_Mangemnet.executor": "Run",
+    "Python.Count Frequency of Words.executor": "Run",
+    "Python.Email Sender Automation.executor": "Run",
+    "Python.Employee Salary Calculator.executor": "Run",
+    "Python.Exam Result Processing.executor": "Run",
+    "Python.Excel01.executor": "Run",
+    "Python.Excel02.executor": "Run",
+    "Python.Excel03.executor": "Run",
+    "Python.Excel_P.executor": "Run",
+    "Python.File Handling.executor": "Run",
+    "Python.File Organizer.executor": "Run",
+    "Python.Find Second Largest Number.executor": "Run",
+    "Python.First Non-Repeating Character.executor": "Run",
+    "Python.Game.executor": "Run",
+    "Python.Hospital Appointment Management System.executor": "Run",
+    "Python.List_Problems.executor": "Run",
+    "Python.MCQ.executor": "Run",
+    "Python.Merge Two Sorted Lists.executor": "Run",
+    "Python.Number_Guessing_Game (1).executor": "Run",
+    "Python.Number_Guessing_Game.executor": "Run",
+    "Python.Online Food Delivery Management System.executor": "Run",
+    "Python.PR01 (1).executor": "Run",
+    "Python.PR01.executor": "Run",
+    "Python.PR02.executor": "Run",
+    "Python.Palindrome.executor": "Run",
+    "Python.Password Generator.executor": "Run",
+    "Python.Patterns.executor": "Run",
+    "Python.Personal Finance & Expense Tracker.executor": "Run",
+    "Python.Project001.executor": "Run",
+    "Python.Rev_WCO.executor": "Run",
+    "Python.Reverse_String_&_Count_Frequnecy.executor": "Run",
+    "Python.Sorting.executor": "Run",
+    "Python.Test_Data_Generator.executor": "Run",
+    "Python.Vehicle Rental System.executor": "Run",
+    "Python.Word Counter Tool (1).executor": "Run",
+    "Python.Word Counter Tool.executor": "Run",
+    "Python.YT_Download.executor": "Run",
+    "Python.YT_Videos.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.array.executor": "Run",
+    "Python.counting.executor": "Run",
+    "Python.driver_setup.executor": "Run",
+    "Python.factorial.executor": "Run",
+    "Python.game.executor": "Run",
+    "Python.home_page.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "Python.multi_browser_geo_runner (1).executor": "Run",
+    "Python.multi_browser_geo_runner.executor": "Run",
+    "Python.painter.executor": "Run",
+    "Python.recorder.executor": "Run",
+    "Python.vowel_count.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Mahesh_Python/Page_Object_Model/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Mahesh_Python" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Mahesh_Python" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Mahesh_Python\Page_Object_Model\config" />
@@ -191,8 +230,8 @@
       <command value="pip install -r requirements.txt" />
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Pytest.Pytest01.test_login">
-    <configuration name="PR02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Merge Two Sorted Lists">
+    <configuration name="Count Frequency of Words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,12 +240,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Shorts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/PR02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/Count Frequency of Words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,7 +254,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multi_browser_geo_runner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Find Second Largest Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,12 +263,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endurance_Test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Shorts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Endurance_Test/multi_browser_geo_runner.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/Find Second Largest Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,61 +277,82 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for PR02.test_get_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="First Non-Repeating Character" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Shorts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;PR02.test_get_user&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/First Non-Repeating Character.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Pytest.Pytest01.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Merge Two Sorted Lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Shorts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pytest.Pytest01.test_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/Merge Two Sorted Lists.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Selenium.OrangeHRM.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="PR01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Selenium.OrangeHRM.test_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/PR01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for Pytest.Pytest01.test_login" />
-        <item itemvalue="Python tests.Python tests for Selenium.OrangeHRM.test_login" />
-        <item itemvalue="Python.PR02" />
-        <item itemvalue="Python.multi_browser_geo_runner" />
-        <item itemvalue="Python tests.Python tests for PR02.test_get_user" />
+        <item itemvalue="Python.Merge Two Sorted Lists" />
+        <item itemvalue="Python.First Non-Repeating Character" />
+        <item itemvalue="Python.Count Frequency of Words" />
+        <item itemvalue="Python.Find Second Largest Number" />
+        <item itemvalue="Python.PR01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -383,11 +443,38 @@
       <option name="project" value="LOCAL" />
       <updated>1776021012527</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1776198414506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776198414506</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1776330765959</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776330765959</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final" />
@@ -395,7 +482,8 @@
     <MESSAGE value="F1" />
     <MESSAGE value="F12" />
     <MESSAGE value="Day13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day13" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />

@@ -2,9 +2,8 @@ a = 'aabbcdeff'
 feq = {}
 for char in a:
     feq[char] = feq.get(char, 0)+1
-print(feq)
 
 for char in feq:
     if feq[char] == 1:
-        print(char)
+        print(f"first Non-Repeating Charactor: {char}")
         break
