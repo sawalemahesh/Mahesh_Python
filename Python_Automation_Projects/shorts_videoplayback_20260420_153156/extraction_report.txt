@@ -1,0 +1,41 @@
+============================================================
+LOCAL VIDEO → SHORTS EXTRACTION REPORT
+Generated : 2026-04-20 15:33
+============================================================
+
+Source    : C:\Mahesh_Python\Python_Automation_Projects\videoplayback.mp4
+Duration  : 1h 3m 24s
+Resolution: 640x360
+FPS       : 25.0
+Size      : 293.0 MB
+
+Summary   : The video discusses India's real challenges, including poverty, education, and politics, and features an interview with Khan Sir, a teacher who has changed the lives of many students. It also touches on the impact of AI on jobs and the economy, highlighting the need for change and adaptation in a rapidly changing world.
+
+============================================================
+
+--- SHORT #1: India's Biggest Mistake ---
+Timestamps : 00:18 → 01:03  (45s)
+Hook       : India doesn't have poverty, it's deliberately kept poor
+Why Viral  : Exposes a harsh reality about India's poverty
+Viral Score: 92%
+Type       : rant
+File       : short_01_Indias_Biggest_Mistake.mp4
+------------------------------------------------------------
+
+--- SHORT #2: Lion's Election Promise ---
+Timestamps : 00:30 → 00:45  (15s)
+Hook       : A lion promises to become a farmer if elected
+Why Viral  : Humorous take on politics and election promises
+Viral Score: 85%
+Type       : funny
+File       : short_02_Lions_Election_Promise.mp4
+------------------------------------------------------------
+
+--- SHORT #3: AI Taking Jobs ---
+Timestamps : 05:48 → 06:45  (57s)
+Hook       : 60% of IT jobs will be lost due to AI
+Why Viral  : Raises concerns about job security in the IT sector
+Viral Score: 90%
+Type       : fact
+File       : short_03_AI_Taking_Jobs.mp4
+------------------------------------------------------------

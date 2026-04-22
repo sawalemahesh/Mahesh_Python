@@ -1,0 +1,642 @@
+Index: Python_Projects/PR01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>n = 5\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Python_Projects/PR01.py b/Python_Projects/PR01.py
+--- a/Python_Projects/PR01.py	(revision 78fcf3f4a0b35fac5603b914da24afb9416266f0)
++++ b/Python_Projects/PR01.py	(date 1776577137237)
+@@ -1,2 +1,12 @@
+-n = 5
++input = 'a1b5g8n7'
+ 
++alpha = []
++d = []
++
++for char in input:
++    if char.isalpha():
++        alpha.append(char)
++    else:
++        d.append(char)
++print("".join(alpha))
++print("".join(d))
+\ No newline at end of file
+Index: Capgemini/Reverse_String_&_Count_Frequnecy.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/Reverse_String_&_Count_Frequnecy.py b/Capgemini/Reverse_String_&_Count_Frequnecy.py
+new file mode 100644
+--- /dev/null	(date 1776327767829)
++++ b/Capgemini/Reverse_String_&_Count_Frequnecy.py	(date 1776327767829)
+@@ -0,0 +1,20 @@
++str1= input("Enter a String : ").lower()
++freq= {}
++rev=''
++vowel = 'aeiou'
++vowel_count = 0
++conso_count = 0
++
++for char in str1:
++    if char.isalpha():
++        rev = char + rev
++        freq[char] = freq.get(char,0)+1
++        if char in vowel:
++            vowel_count += 1
++        else:
++            conso_count += 1
++
++print(f"Reversed String, {rev}")
++print(f"Frequency of String, {freq}")
++print(f"Vowel Count,{vowel_count}")
++print(f"Comnsosnent Count, {conso_count}")
+\ No newline at end of file
+Index: Capgemini/Patterns.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/Patterns.py b/Capgemini/Patterns.py
+new file mode 100644
+--- /dev/null	(date 1776333207074)
++++ b/Capgemini/Patterns.py	(date 1776333207074)
+@@ -0,0 +1,25 @@
++n = 5
++for i in range(n, 0 ,-1):
++    for j in range(1,i+1):
++        print(j, end = " ")
++    print(" ")
++
++print("__________________________________")
++
++for i in range(1, n+1):
++    for j in range(1,i+1):
++        print(j, end= " ")
++    print(" ")
++
++print("__________________________________")
++
++for i in range(1, n + 1):
++    # spaces
++    for j in range(n - i):
++        print(" ", end="")
++
++    # stars
++    for k in range(i):
++        print("* ", end="")
++
++    print("")
+\ No newline at end of file
+Index: Capgemini/List_Problems.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/List_Problems.py b/Capgemini/List_Problems.py
+new file mode 100644
+--- /dev/null	(date 1776330314241)
++++ b/Capgemini/List_Problems.py	(date 1776330314241)
+@@ -0,0 +1,40 @@
++''' Sum of Even number form give list
++'''
++
++list1 = [20,3,60,3,5,3,6,13,88]
++even = []
++for char in list1:
++    if char % 2 == 0:
++        even.append(char)
++print(even)
++print(sum(even))
++
++print("Filter Method")
++list1 = [20,3,60,3,5,3,6,13,88]
++even = list(filter(lambda x:x%2==0,list1))
++print(even)
++
++
++# '------------------------------------------------------------------------------'
++
++# Find second highest Temperature
++
++cities = ["Delhi", "Mumbai", "Chennai", "Kolkata", "Bangalore"]
++temps = [35, 40, 38, 42, 37]
++
++# Combine both lists
++data = list(zip(cities, temps))
++print(data)
++
++# Sort by temperature (highest first)
++data_sorted = sorted(data, key=lambda x: x[1], reverse=True)
++
++# Get second largest
++second_largest = data_sorted[1]
++
++print("Second highest temperature city:", second_largest[0])
++print("Temperature:", second_largest[1])
++
++
++# '------------------------------------------------------------------------------'
++
+Index: Capgemini/smallest and biggest words in string.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/smallest and biggest words in string.py b/Capgemini/smallest and biggest words in string.py
+new file mode 100644
+--- /dev/null	(date 1776369297456)
++++ b/Capgemini/smallest and biggest words in string.py	(date 1776369297456)
+@@ -0,0 +1,14 @@
++str1 = 'well done is better than well said'
++lst = str1.split()
++
++smallest = lst[0]
++biggest = lst[0]
++
++for word in lst:
++    if len(word) < len(smallest):
++        smallest = word
++    if len(word) > len(biggest):
++        biggest = word
++
++print("The biggest word:", biggest)
++print("The smallest word:", smallest)
+\ No newline at end of file
+Index: Capgemini/string_number_count.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/string_number_count.py b/Capgemini/string_number_count.py
+new file mode 100644
+--- /dev/null	(date 1776361043479)
++++ b/Capgemini/string_number_count.py	(date 1776361043479)
+@@ -0,0 +1,13 @@
++s = 'aaaabbbccaabb'
++
++result = ''
++count = 1
++
++for i in range(len(s)):
++    if i < len(s) - 1 and s[i] == s[i + 1]:
++        count += 1
++    else:
++        result += s[i] + str(count)
++        count = 1
++
++print(result)
+\ No newline at end of file
+Index: Capgemini/Abstraction.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/Abstraction.py b/Capgemini/Abstraction.py
+new file mode 100644
+--- /dev/null	(date 1776412972283)
++++ b/Capgemini/Abstraction.py	(date 1776412972283)
+@@ -0,0 +1,20 @@
++from abc import ABC, abstractmethod
++
++class Car(ABC):
++
++    @abstractmethod
++    def mileage(self):
++        pass
++
++class BMW(Car):
++    def mileage(self):
++        print("BMW mileage is 15 km/l")
++
++class Audi(Car):
++    def mileage(self):
++        print("Audi mileage is 12 km/l")
++obj1 = BMW()
++obj2 = Audi()
++
++obj1.mileage()
++obj2.mileage()
+\ No newline at end of file
+Index: Selenium/SL07.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Selenium/SL07.py b/Selenium/SL07.py
+new file mode 100644
+--- /dev/null	(date 1776199123957)
++++ b/Selenium/SL07.py	(date 1776199123957)
+@@ -0,0 +1,41 @@
++from selenium import webdriver
++from selenium.webdriver.common.by import By
++from selenium.webdriver.common.keys import Keys
++from selenium.webdriver.support.ui import WebDriverWait
++from selenium.webdriver.support import expected_conditions as EC
++
++def test_google_search():
++    driver = webdriver.Chrome()
++    driver.get("https://www.google.com")
++
++    # Wait for search box
++    wait = WebDriverWait(driver, 10)
++    search_box = wait.until(EC.visibility_of_element_located((By.NAME, "q")))
++
++    search_box.send_keys("Playwright")
++    search_box.send_keys(Keys.RETURN)
++
++    # Wait for title
++    wait.until(EC.title_contains("Playwright"))
++
++    assert "Playwright" in driver.title
++
++    driver.quit()
++
++
++from playwright.sync_api import sync_playwright
++
++def test_google_search():
++    with sync_playwright() as p:
++        browser = p.chromium.launch(headless=False)
++        page = browser.new_page()
++
++        page.goto("https://www.google.com")
++
++        page.fill("input[name='q']", "Playwright")
++        page.press("input[name='q']", "Enter")
++
++        # Auto-wait handles everything
++        assert "Playwright" in page.title()
++
++        browser.close()
+\ No newline at end of file
+Index: Capgemini/array.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Capgemini/array.py b/Capgemini/array.py
+new file mode 100644
+--- /dev/null	(date 1776371030198)
++++ b/Capgemini/array.py	(date 1776371030198)
+@@ -0,0 +1,24 @@
++# Take array size
++n = int(input("Enter number of elements: "))
++
++arr = []
++
++# Take array values
++for i in range(n):
++    val = int(input("Enter element: "))
++    arr.append(val)
++
++# Assume first element is smallest & largest
++smallest = arr[0]
++largest = arr[0]
++
++# Find smallest and largest
++for num in arr:
++    if num < smallest:
++        smallest = num
++    if num > largest:
++        largest = num
++
++print("Array:", arr)
++print("Smallest number:", smallest)
++print("Largest number:", largest)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"548e666d-ff67-472a-adcf-be9f7d9a963e\" name=\"Changes\" comment=\"Day13\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Python Basic Projects/PR01.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Python Basic Projects/PR01.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Selenium/OrangeHRM.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Selenium/OrangeHRM.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DatabaseLocalColorSettings\">\r\n    <colors>\r\n      <entry key=\"b0f3cc23-dbe2-4f28-811b-2975c777834c\" value=\"Orange\" />\r\n    </colors>\r\n  </component>\r\n  <component name=\"ExportTestResults\" outputFolder=\"$PROJECT_DIR$\" userTempatePath=\"\" />\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Python Stub\" />\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;sawalemahesh&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/sawalemahesh/Mahesh_Python.git&quot;,\r\n    &quot;accountId&quot;: &quot;f8af8ede-0793-4e3d-993a-228dd1e1c289&quot;\r\n  }\r\n}</component>\r\n  <component name=\"McpProjectServerCommands\">\r\n    <commands />\r\n    <urls />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"37FwDe1Kz0KRMYwmvfT38I0Qn8D\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;Python tests.Python tests for POM.tests.test_checkout.test_complete_checkout_flow.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for POM.tests.test_login.test_invalid_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for POM.tests.test_login.test_valid_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_addition.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_compare.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_driver.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_login_negitive_module.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_mahesh_selenium.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR01.test_selen_module.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_OrangeHRM.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_Web.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_add.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_get_user.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_google_title.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for PR02.test_user.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Pytest.Pytest01.test_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Pytest.Pytest02.test_required_keys.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Pytest.Pytest02.test_status_code.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.OrangeHRM.test_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative02.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL04.test_Xpath.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL05.test_OrangeHRM.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_SignUP_Page.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_SignUp.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_automation.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN2.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python tests.Python tests in PR01.py.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.ABC.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.ATM Simulation.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Bank Management System.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Bank Transaction Management System.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Contact_Mangemnet.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Email Sender Automation.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Employee Salary Calculator.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Exam Result Processing.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Excel01.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Excel02.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Excel03.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Excel_P.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.File Handling.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.File Organizer.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Game.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Hospital Appointment Management System.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.MCQ.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Number_Guessing_Game (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Number_Guessing_Game.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Online Food Delivery Management System.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.PR01.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.PR02.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Palindrome.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Password Generator.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Personal Finance &amp; Expense Tracker.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Project001.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Rev_WCO.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Sorting.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Test_Data_Generator.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Vehicle Rental System.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Word Counter Tool (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.Word Counter Tool.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.counting.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.driver_setup.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.factorial.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.game.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.home_page.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.multi_browser_geo_runner (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.multi_browser_geo_runner.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.painter.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.recorder.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.vowel_count.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,\r\n    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Mahesh_Python/Page_Object_Model/config&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,\r\n    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Mahesh_Python\\Page_Object_Model\\config\" />\r\n      <recent name=\"C:\\Mahesh_Python\\Page_Object_Model\\utilities\" />\r\n      <recent name=\"C:\\Mahesh_Python\\Page_Object_Model\\Tests\" />\r\n      <recent name=\"C:\\Mahesh_Python\\Page_Object_Model\\testdata\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Mahesh_Python\\Endurance_Test\" />\r\n      <recent name=\"C:\\Mahesh_Python\\POM\" />\r\n      <recent name=\"C:\\Mahesh_Python\\Python_Projects\" />\r\n      <recent name=\"C:\\Mahesh_Python\\Selenium\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"pip install -r requirements.txt\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python tests.Python tests for Pytest.Pytest01.test_login\">\r\n    <configuration name=\"PR02\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Mahesh_Python\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Python Basic Projects\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Python Basic Projects/PR02.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"multi_browser_geo_runner\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Mahesh_Python\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Endurance_Test\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Endurance_Test/multi_browser_geo_runner.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Python tests for PR02.test_get_user\" type=\"tests\" factoryName=\"Autodetect\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Mahesh_Python\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"_new_additionalArguments\" value=\"&quot;&quot;\" />\r\n      <option name=\"_new_target\" value=\"&quot;PR02.test_get_user&quot;\" />\r\n      <option name=\"_new_targetType\" value=\"&quot;PYTHON&quot;\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Python tests for Pytest.Pytest01.test_login\" type=\"tests\" factoryName=\"Autodetect\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Mahesh_Python\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"_new_additionalArguments\" value=\"&quot;&quot;\" />\r\n      <option name=\"_new_target\" value=\"&quot;Pytest.Pytest01.test_login&quot;\" />\r\n      <option name=\"_new_targetType\" value=\"&quot;PYTHON&quot;\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Python tests for Selenium.OrangeHRM.test_login\" type=\"tests\" factoryName=\"Autodetect\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Mahesh_Python\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"RUN_TOOL\" value=\"\" />\r\n      <option name=\"_new_additionalArguments\" value=\"&quot;&quot;\" />\r\n      <option name=\"_new_target\" value=\"&quot;Selenium.OrangeHRM.test_login&quot;\" />\r\n      <option name=\"_new_targetType\" value=\"&quot;PYTHON&quot;\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python tests.Python tests for Pytest.Pytest01.test_login\" />\r\n        <item itemvalue=\"Python tests.Python tests for Selenium.OrangeHRM.test_login\" />\r\n        <item itemvalue=\"Python.PR02\" />\r\n        <item itemvalue=\"Python.multi_browser_geo_runner\" />\r\n        <item itemvalue=\"Python tests.Python tests for PR02.test_get_user\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-1cd77e80b48f-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.32098.74\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"548e666d-ff67-472a-adcf-be9f7d9a963e\" name=\"Changes\" comment=\"\" />\r\n      <created>1766512008822</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1766512008822</updated>\r\n      <workItem from=\"1766512009833\" duration=\"13668000\" />\r\n      <workItem from=\"1766593119657\" duration=\"4641000\" />\r\n      <workItem from=\"1766635335220\" duration=\"12554000\" />\r\n      <workItem from=\"1766723319225\" duration=\"13948000\" />\r\n      <workItem from=\"1766822505638\" duration=\"10853000\" />\r\n      <workItem from=\"1766906832507\" duration=\"13606000\" />\r\n      <workItem from=\"1766950313522\" duration=\"16707000\" />\r\n      <workItem from=\"1767545312370\" duration=\"2495000\" />\r\n      <workItem from=\"1767979621358\" duration=\"6633000\" />\r\n      <workItem from=\"1768020640064\" duration=\"4977000\" />\r\n      <workItem from=\"1768054645701\" duration=\"7314000\" />\r\n      <workItem from=\"1768152318843\" duration=\"2378000\" />\r\n      <workItem from=\"1768410540710\" duration=\"575000\" />\r\n      <workItem from=\"1768583265355\" duration=\"3261000\" />\r\n      <workItem from=\"1768674363929\" duration=\"34268000\" />\r\n      <workItem from=\"1769083796596\" duration=\"330000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Final\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769890915407</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769890915407</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Final\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769890945064</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769890945064</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Final\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771065299309</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771065299309</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"F\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771071161374</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771071161374</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"F1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771092378448</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771092378448</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"F12\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771132824927</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771132824927</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Day13\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1776021012527</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1776021012527</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Final\" />\r\n    <MESSAGE value=\"F\" />\r\n    <MESSAGE value=\"F1\" />\r\n    <MESSAGE value=\"F12\" />\r\n    <MESSAGE value=\"Day13\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Day13\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Contact_Mangemnet.coverage\" NAME=\"Word Counter Tool Coverage Results\" MODIFIED=\"1766947606342\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Excel03.coverage\" NAME=\"Excel03 Coverage Results\" MODIFIED=\"1768152659548\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$.coverage\" NAME=\" Coverage Results\" MODIFIED=\"1768846536073\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Bank_Transaction_Management_System.coverage\" NAME=\"Bank Transaction Management System Coverage Results\" MODIFIED=\"1766686957382\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$home_page.coverage\" NAME=\"home_page Coverage Results\" MODIFIED=\"1768819302211\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/POM/pages\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Project001.coverage\" NAME=\"Project001 Coverage Results\" MODIFIED=\"1766946023799\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$File_Handling.coverage\" NAME=\"File Handling Coverage Results\" MODIFIED=\"1767034097913\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$painter.coverage\" NAME=\"painter Coverage Results\" MODIFIED=\"1768067898226\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$USER_HOME$/AppData/Local/Temp\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Word_Counter_Tool__1_.coverage\" NAME=\"Word Counter Tool (1) Coverage Results\" MODIFIED=\"1766948645747\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Online_Food_Delivery_Management_System.coverage\" NAME=\"Online Food Delivery Management System Coverage Results\" MODIFIED=\"1766593139516\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Personal_Finance___Expense_Tracker.coverage\" NAME=\"Personal Finance &amp; Expense Tracker Coverage Results\" MODIFIED=\"1766597643169\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Excel02.coverage\" NAME=\"Excel02 Coverage Results\" MODIFIED=\"1768071883212\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Employee_Salary_Calculator.coverage\" NAME=\"Employee Salary Calculator Coverage Results\" MODIFIED=\"1767042886890\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Vehicle_Rental_System.coverage\" NAME=\"Vehicle Rental System Coverage Results\" MODIFIED=\"1766513896552\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Sorting.coverage\" NAME=\"Sorting Coverage Results\" MODIFIED=\"1768153962391\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$PR01.coverage\" NAME=\"PR01 Coverage Results\" MODIFIED=\"1768937362007\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Exam_Result_Processing.coverage\" NAME=\"Exam Result Processing Coverage Results\" MODIFIED=\"1767034449219\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$recorder.coverage\" NAME=\"recorder Coverage Results\" MODIFIED=\"1768067927050\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$USER_HOME$/AppData/Local/Temp\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$factorial.coverage\" NAME=\"factorial Coverage Results\" MODIFIED=\"1768727977235\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Hospital_Appointment_Management_System.coverage\" NAME=\"Hospital Appointment Management System Coverage Results\" MODIFIED=\"1766512999502\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$Game.coverage\" NAME=\"Game Coverage Results\" MODIFIED=\"1767036396362\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Python_Projects\" />\r\n    <SUITE FILE_PATH=\"coverage/Mahesh_Python$game.coverage\" NAME=\"game Coverage Results\" MODIFIED=\"1768067902848\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$USER_HOME$/AppData/Local/Temp\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 78fcf3f4a0b35fac5603b914da24afb9416266f0)
++++ b/.idea/workspace.xml	(date 1776576818211)
+@@ -4,10 +4,19 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Day13">
++    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Updated">
++      <change afterPath="$PROJECT_DIR$/Capgemini/Abstraction.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/List_Problems.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/Patterns.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/Reverse_String_&amp;_Count_Frequnecy.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/array.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/smallest and biggest words in string.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Capgemini/string_number_count.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Playwright/PR01.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Selenium/SL07.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Python Basic Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Basic Projects/PR01.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Selenium/OrangeHRM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/OrangeHRM.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Python_Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/PR01.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Selenium/Sample_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/Sample_IN.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -83,9 +92,13 @@
+     &quot;Python tests.Python tests for PR02.test_google_title.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for PR02.test_login.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for PR02.test_user.executor&quot;: &quot;Run&quot;,
++    &quot;Python tests.Python tests for Playwright.PR01.test_login.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Pytest.Pytest01.test_login.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Pytest.Pytest02.test_required_keys.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Pytest.Pytest02.test_status_code.executor&quot;: &quot;Run&quot;,
++    &quot;Python tests.Python tests for Python_Projects.PR01.test_api.executor&quot;: &quot;Run&quot;,
++    &quot;Python tests.Python tests for Python_Projects.PR01.test_get_users.executor&quot;: &quot;Run&quot;,
++    &quot;Python tests.Python tests for Python_Projects.PR01.test_sl.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.OrangeHRM.test_login.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Pytest_SL02.test_login_negative.executor&quot;: &quot;Run&quot;,
+@@ -98,11 +111,13 @@
+     &quot;Python tests.Python tests for Selenium.Pytest_SL06.test_blog.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Pytest_SL_03.test_demo01.executor&quot;: &quot;Run&quot;,
++    &quot;Python tests.Python tests for Selenium.SL07.test_google_search.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests for Selenium.Sample_IN.test_IN2.executor&quot;: &quot;Run&quot;,
+     &quot;Python tests.Python tests in PR01.py.executor&quot;: &quot;Run&quot;,
+     &quot;Python.ABC.executor&quot;: &quot;Run&quot;,
+     &quot;Python.ATM Simulation.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Abstraction.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Bank Management System.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Bank Transaction Management System.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Contact_Mangemnet.executor&quot;: &quot;Run&quot;,
+@@ -117,23 +132,28 @@
+     &quot;Python.File Organizer.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Game.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Hospital Appointment Management System.executor&quot;: &quot;Run&quot;,
++    &quot;Python.List_Problems.executor&quot;: &quot;Run&quot;,
+     &quot;Python.MCQ.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Number_Guessing_Game (1).executor&quot;: &quot;Run&quot;,
+     &quot;Python.Number_Guessing_Game.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Online Food Delivery Management System.executor&quot;: &quot;Run&quot;,
++    &quot;Python.PR01 (1).executor&quot;: &quot;Run&quot;,
+     &quot;Python.PR01.executor&quot;: &quot;Run&quot;,
+     &quot;Python.PR02.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Palindrome.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Password Generator.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Patterns.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Personal Finance &amp; Expense Tracker.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Project001.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Rev_WCO.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Reverse_String_&amp;_Count_Frequnecy.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Sorting.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Test_Data_Generator.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Vehicle Rental System.executor&quot;: &quot;Run&quot;,
+     &quot;Python.Word Counter Tool (1).executor&quot;: &quot;Run&quot;,
+     &quot;Python.Word Counter Tool.executor&quot;: &quot;Run&quot;,
+     &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
++    &quot;Python.array.executor&quot;: &quot;Run&quot;,
+     &quot;Python.counting.executor&quot;: &quot;Run&quot;,
+     &quot;Python.driver_setup.executor&quot;: &quot;Run&quot;,
+     &quot;Python.factorial.executor&quot;: &quot;Run&quot;,
+@@ -162,7 +182,7 @@
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+@@ -172,6 +192,14 @@
+     ]
+   }
+ }</component>
++  <component name="PyConsoleOptionsProvider">
++    <option name="myPythonConsoleState">
++      <console-settings module-name="Mahesh_Python" is-module-sdk="true">
++        <option name="myUseModuleSdk" value="true" />
++        <option name="myModuleName" value="Mahesh_Python" />
++      </console-settings>
++    </option>
++  </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Mahesh_Python\Page_Object_Model\config" />
+@@ -191,8 +219,8 @@
+       <command value="pip install -r requirements.txt" />
+     </option>
+   </component>
+-  <component name="RunManager" selected="Python tests.Python tests for Pytest.Pytest01.test_login">
+-    <configuration name="PR02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="Python.PR01 (1)">
++    <configuration name="PR01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="Mahesh_Python" />
+       <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -201,12 +229,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Basic Projects" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <option name="RUN_TOOL" value="" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Basic Projects/PR02.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/PR01.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -215,30 +243,23 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="multi_browser_geo_runner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++    <configuration name="Python tests for Playwright.PR01.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+       <module name="Mahesh_Python" />
+       <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endurance_Test" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <option name="RUN_TOOL" value="" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Endurance_Test/multi_browser_geo_runner.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;Playwright.PR01.test_login&quot;" />
++      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="Python tests for PR02.test_get_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
++    <configuration name="Python tests for Python_Projects.PR01.test_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+       <module name="Mahesh_Python" />
+       <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -250,11 +271,11 @@
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <option name="RUN_TOOL" value="" />
+       <option name="_new_additionalArguments" value="&quot;&quot;" />
+-      <option name="_new_target" value="&quot;PR02.test_get_user&quot;" />
++      <option name="_new_target" value="&quot;Python_Projects.PR01.test_api&quot;" />
+       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="Python tests for Pytest.Pytest01.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
++    <configuration name="Python tests for Python_Projects.PR01.test_sl" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+       <module name="Mahesh_Python" />
+       <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -266,11 +287,11 @@
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <option name="RUN_TOOL" value="" />
+       <option name="_new_additionalArguments" value="&quot;&quot;" />
+-      <option name="_new_target" value="&quot;Pytest.Pytest01.test_login&quot;" />
++      <option name="_new_target" value="&quot;Python_Projects.PR01.test_sl&quot;" />
+       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="Python tests for Selenium.OrangeHRM.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
++    <configuration name="Python tests in PR01.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+       <module name="Mahesh_Python" />
+       <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -282,17 +303,17 @@
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <option name="RUN_TOOL" value="" />
+       <option name="_new_additionalArguments" value="&quot;&quot;" />
+-      <option name="_new_target" value="&quot;Selenium.OrangeHRM.test_login&quot;" />
+-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
++      <option name="_new_target" value="&quot;$PROJECT_DIR$/Playwright/PR01.py&quot;" />
++      <option name="_new_targetType" value="&quot;PATH&quot;" />
+       <method v="2" />
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Python tests.Python tests for Pytest.Pytest01.test_login" />
+-        <item itemvalue="Python tests.Python tests for Selenium.OrangeHRM.test_login" />
+-        <item itemvalue="Python.PR02" />
+-        <item itemvalue="Python.multi_browser_geo_runner" />
+-        <item itemvalue="Python tests.Python tests for PR02.test_get_user" />
++        <item itemvalue="Python.PR01 (1)" />
++        <item itemvalue="Python tests.Python tests in PR01.py" />
++        <item itemvalue="Python tests.Python tests for Playwright.PR01.test_login" />
++        <item itemvalue="Python tests.Python tests for Python_Projects.PR01.test_sl" />
++        <item itemvalue="Python tests.Python tests for Python_Projects.PR01.test_api" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -383,19 +404,47 @@
+       <option name="project" value="LOCAL" />
+       <updated>1776021012527</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="Updated">
++      <option name="closed" value="true" />
++      <created>1776198414506</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1776198414506</updated>
++    </task>
++    <task id="LOCAL-00009" summary="Updated">
++      <option name="closed" value="true" />
++      <created>1776330765959</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1776330765959</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Final" />
+     <MESSAGE value="F" />
+     <MESSAGE value="F1" />
+     <MESSAGE value="F12" />
+     <MESSAGE value="Day13" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Day13" />
++    <MESSAGE value="Updated" />
++    <option name="LAST_COMMIT_MESSAGE" value="" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />
+Index: Selenium/Sample_IN.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from selenium import webdriver\r\nimport pytest\r\nimport time\r\n\r\nfrom selenium.webdriver.chrome.options import Options\r\nfrom selenium.webdriver.common.keys import Keys\r\nfrom selenium.webdriver.common.by import By\r\n\r\ndef test_IN():\r\n    driver = webdriver.Chrome()\r\n    chrome_options = Options()\r\n    chrome_options.add_argument('--start-minimized')\r\n    chrome_options.add_argument('--no-sandbox')\r\n    driver.get(\"https://demoqa.com/\")\r\n    assert driver.title == \"demosite\"\r\n\r\n    driver.quit()\r\n\r\ndef test_IN2():\r\n    assert test_IN.title == \"demosite\"\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Selenium/Sample_IN.py b/Selenium/Sample_IN.py
+--- a/Selenium/Sample_IN.py	(revision 78fcf3f4a0b35fac5603b914da24afb9416266f0)
++++ b/Selenium/Sample_IN.py	(date 1776327481062)
+@@ -1,22 +1,0 @@
+-from selenium import webdriver
+-import pytest
+-import time
+-
+-from selenium.webdriver.chrome.options import Options
+-from selenium.webdriver.common.keys import Keys
+-from selenium.webdriver.common.by import By
+-
+-def test_IN():
+-    driver = webdriver.Chrome()
+-    chrome_options = Options()
+-    chrome_options.add_argument('--start-minimized')
+-    chrome_options.add_argument('--no-sandbox')
+-    driver.get("https://demoqa.com/")
+-    assert driver.title == "demosite"
+-
+-    driver.quit()
+-
+-def test_IN2():
+-    assert test_IN.title == "demosite"
+-
+-
+Index: Playwright/PR01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playwright/PR01.py b/Playwright/PR01.py
+new file mode 100644
+--- /dev/null	(date 1776278073856)
++++ b/Playwright/PR01.py	(date 1776278073856)
+@@ -0,0 +1,10 @@
++from playwright.sync_api import sync_playwright
++
++def test_login():
++    browser = sync_playwright().start().chromium.launch(headless = False)
++    context = browser.new_context()
++    page = context.new_page()
++    page.goto('https://app.vwo.com/#/login')
++    page.wait_for_load_state('networkidle')
++
++
