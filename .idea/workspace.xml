@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Capgemini/Abstraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/List_Problems.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/Patterns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/Reverse_String_&amp;_Count_Frequnecy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/smallest and biggest words in string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capgemini/string_number_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playwright/PR01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/YT_Download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Automation_Projects/YT_Videos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Shorts/Count Frequency of Words.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Shorts/First Non-Repeating Character.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Shorts/Merge Two Sorted Lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium/SL07.py" afterDir="false" />
+    <list default="true" id="548e666d-ff67-472a-adcf-be9f7d9a963e" name="Changes" comment="21-April">
+      <change afterPath="$PROJECT_DIR$/Capgemini/Class_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capgemini/Static_Method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Projects/PR01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Projects/PR01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium/Sample_IN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium/Sample_IN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +111,7 @@
     "Python.Abstraction.executor": "Run",
     "Python.Bank Management System.executor": "Run",
     "Python.Bank Transaction Management System.executor": "Run",
+    "Python.Class_method.executor": "Run",
     "Python.Contact_Mangemnet.executor": "Run",
     "Python.Count Frequency of Words.executor": "Run",
     "Python.Email Sender Automation.executor": "Run",
@@ -157,6 +144,7 @@
     "Python.Rev_WCO.executor": "Run",
     "Python.Reverse_String_&_Count_Frequnecy.executor": "Run",
     "Python.Sorting.executor": "Run",
+    "Python.Static_Method.executor": "Run",
     "Python.Test_Data_Generator.executor": "Run",
     "Python.Vehicle Rental System.executor": "Run",
     "Python.Word Counter Tool (1).executor": "Run",
@@ -230,7 +218,30 @@
       <command value="pip install -r requirements.txt" />
     </option>
   </component>
-  <component name="RunManager" selected="Python.Merge Two Sorted Lists">
+  <component name="RunManager" selected="Python.Static_Method">
+    <configuration name="Class_method" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mahesh_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Capgemini" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Capgemini/Class_method.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Count Frequency of Words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
@@ -246,29 +257,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/Count Frequency of Words.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Find Second Largest Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mahesh_Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Shorts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Shorts/Find Second Largest Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,7 +311,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PR01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Static_Method" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mahesh_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,12 +320,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Projects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Capgemini" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Projects/PR01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Capgemini/Static_Method.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Static_Method" />
+        <item itemvalue="Python.Class_method" />
         <item itemvalue="Python.Merge Two Sorted Lists" />
         <item itemvalue="Python.First Non-Repeating Character" />
         <item itemvalue="Python.Count Frequency of Words" />
-        <item itemvalue="Python.Find Second Largest Number" />
-        <item itemvalue="Python.PR01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776330765959</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="21-April">
+      <option name="closed" value="true" />
+      <created>1776713234804</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1776713234804</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +479,8 @@
     <MESSAGE value="F12" />
     <MESSAGE value="Day13" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="21-April" />
+    <option name="LAST_COMMIT_MESSAGE" value="21-April" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mahesh_Python$Contact_Mangemnet.coverage" NAME="Word Counter Tool Coverage Results" MODIFIED="1766947606342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Projects" />
