@@ -1,10 +1,18 @@
-a = 'aabbcdeff'
-feq = {}
-for char in a:
-    feq[char] = feq.get(char, 0)+1
-print(feq)
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+import pytest
+import time
 
-for char in feq:
-    if feq[char] == 1:
-        print(char)
-        break
+
+def test_Xpath():
+    # chrome_options = Options()
+    # chrome_options.add_argument("--incognito")
+    # chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--disable-extensions")
+    driver = webdriver.Chrome()
+    driver.get("https://maheshsawale.blogspot.com/")
+
+    time.sleep(5)
+
+
